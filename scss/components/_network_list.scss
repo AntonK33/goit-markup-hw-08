@@ -1,0 +1,40 @@
+ .network-list{
+            display: flex;
+            justify-content: center;
+
+            &__item{
+                margin-right: 10px;
+            }
+            &__item:last-child{
+                margin-right: 0px;
+            }
+
+            &__link{
+                display: flex;
+                align-items: center;
+                justify-content: center;                 
+                width: 44px;
+                height: 44px;
+                border-radius: 50%;              
+                cursor: pointer; 
+                transition-property: background-color;
+                transition-duration: 250ms;
+                transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1) ;    
+            }
+            .network-list__link_style{
+                fill:#FFFFFF ;
+                background: rgba(255, 255, 255, 0.1);
+            }
+            &__link:hover,
+            &__link:focus{
+                background-color: var(--accent-color);
+                
+            }
+
+            &__ico{
+                display: flex;  
+                width: 20px;
+                height: 20px;
+                
+            }
+        }
