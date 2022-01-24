@@ -1,14 +1,80 @@
 .footer{
     background: #2F303A;
+    background-size: auto;
     padding: 60px 0;
 
-    .footer__container{
-        display: flex;
-        align-items: baseline;
+.tablet-container{
+    @media screen and(max-width:767px){
+align-items: center;
+    }
+     @media screen and(min-width:768px){
+  display:flex;
+  align-items: baseline;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 60px;
+     }
+       @media screen and(min-width:1280px){
+margin-bottom: 0px;
+       }
+}
+   .footer__container_tablet{
+        @media screen and(max-width:767px){
+align-items: center;
+    }
+        @media screen and(min-width:768px){
+ display: flex;
+       flex-direction: column;
+       width: 100%;
+        }
+      @media screen and(min-width:1280px){
+           width: 1200px;
+          
+      }
+       
+   }
 
+
+
+
+
+    .footer__container{
+        
+@media screen and(max-width:767px){
+display: flex;
+      
+        flex-direction: column;
+
+}
+  
+    @media screen and(min-width:768px){
+
+    display: flex;
+            align-items: baseline;
+    } 
+    @media screen and(min-width:1280px){
+    display: flex;
+    flex-direction: row;
+            align-items: baseline;
+    }
         .contact {
             margin-right: 70px;
-
+        @media screen and(max-width:767px){
+         margin-bottom: 60px;
+         margin-right: 0px;
+         width: 100%;
+         text-align: center;
+        }
+        
+        @media screen and(min-width:768px){
+margin-right: 0px;
+      
+        } 
+        @media screen and(min-width:1280px){
+         margin-right: 70px;
+         text-align: start;
+         margin-bottom: 0px;
+        }
             .logo{
                 font-family: "Ralewey",sans-serif;
                 font-weight: 700;
@@ -17,10 +83,22 @@
                 text-decoration: none;
                 letter-spacing: 0.03em;
                color: var(--accent-color);
-                margin-right: 93px;;
+                margin-right: 93px;
                 display: block;
                 margin-bottom: 20px;
-            
+                
+        @media screen and(max-width:767px){
+         text-align: center;
+         width: 100%;
+        }
+        
+        @media screen and(min-width:768px){
+
+      
+        } 
+        @media screen and(min-width:1280px){
+        text-align: start;
+        }
             &__white{
               color: #FFFFFF;  ;
             }
@@ -60,6 +138,19 @@
 
         .footer-block{
             margin-right: 93px;
+             @media screen and(max-width:767px){
+        margin-bottom: 60px;
+        width: 100%;
+        text-align: center;
+        }
+        
+        @media screen and(min-width:768px){
+ margin-right: 0px;
+      
+        } 
+        @media screen and(min-width:1280px){
+          margin-right: 83px;
+        }
         }
         
         .footer-block__text{
@@ -70,19 +161,64 @@
             text-transform: uppercase;
             margin-bottom: 20px;
             color: #FFFFFF;
+                       @media screen and (max-width:767px) {
+            text-align: center;
+            }
+
+            @media screen and (min-width: 768px) {
+             text-align: center;
+            }
+            
+
+            @media screen and (min-width: 1280px) {
+            text-align: start;
+            }
         }
 
         .footer-box {
             display: flex; 
+            @media screen and (max-width:767pxx) {
+           
+            }
+
+            @media screen and (min-width: 768px) {
+            
+            }
+            
+
+            @media screen and (min-width: 1280px) {
+            
+            }
         }
 
         .network{
             display: flex;
             justify-content: center;
+                 @media screen and(max-width:767px){
+       width: 100%;
+        }
+        
+        @media screen and(min-width:768px){
+
+      
+        } 
+        @media screen and(min-width:1280px){
+       justify-content: start;
+        }
 
             &__item{
                 margin-right: 10px;
-            
+                      @media screen and(max-width:767px){
+      
+        }
+        
+        @media screen and(min-width:768px){
+
+      
+        } 
+        @media screen and(min-width:1280px){
+       
+        }
             
             &:last-child{
                 margin-right: 0px;
@@ -125,7 +261,23 @@
         .application{
         display: flex;
         flex-direction: column;
+             @media screen and (max-width:767px) {
+   width: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+            }
 
+            @media screen and (min-width: 768px) {
+            width: 100%;
+  text-align: center;
+  justify-content: center;
+            }
+            
+
+            @media screen and (min-width: 1280px) {
+            
+            }
 
             .application__text{
                 display: block;
@@ -137,9 +289,28 @@
                 width: 100%;
                 color: #FFFFFF;
                 margin-bottom: 20px;
+          @media screen and (min-width: 1280px){
+              text-align: start;
+          }
             }
             .application__span{
                 display: flex;
+                @media screen and (max-width:767px) {
+   
+   flex-direction: column;
+   align-items: center;
+            }
+
+            @media screen and (min-width: 768px) {
+            flex-direction: column;
+   align-items: center;
+            }
+            
+
+            @media screen and (min-width: 1280px) {
+            flex-direction: row;
+            align-items: flex-start;
+            }
             }
 
             .application__input{
@@ -156,7 +327,19 @@
                 background: #2F303A;
                 cursor: pointer;
                 transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) border;
+                 @media screen and(max-width:767px){
+                margin-bottom: 20px;
+                max-width: 450px;
+                }
+                
+                @media screen and(min-width:768px){
+margin-bottom: 20px;
             
+                } 
+                @media screen and(min-width:1280px){
+                margin-right: 0px;
+                max-width: 358px;
+                }
             &:focus{
                 border:1px solid var(--accent-color);
                 outline: none;
@@ -184,6 +367,7 @@
                 transition-duration: 250ms;
                 transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1) ; 
             
+                
             &:focus{
                 background-color: #188CE8;
                 border: 1px solid black;
@@ -197,8 +381,8 @@
             }
         }
     }
-}
 
+}
 
 
 

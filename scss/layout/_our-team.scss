@@ -1,6 +1,6 @@
 .section__color{
     background: #F5F4FA;
-
+z-index: 1;
 }
 .section__title{ 
     font-weight: 700;
@@ -13,14 +13,51 @@
 
 .team{
     display: flex; 
+z-index: 1;
+  @media screen and(max-width:767px){
+flex-direction: column;
+
+}
   
+@media screen and(min-width:768px){
+flex-wrap: wrap;
+display: flex;
+    margin: -15px;
+} 
+@media screen and(min-width:1280px){
+flex-direction: row;
+}
     .team__item{
-        margin-right: 30px;
+       
+       @media screen and(max-width:767px){
+    margin-bottom: 30px;
+    } 
+    @media screen and(min-width:768px){
+         margin: 15px;
+   flex-basis:calc((100% - 2 * 30px) / 2) ;    
+    } 
+    @media screen and(min-width:1280px){
+     margin-right: 30px;
+     margin-bottom: 0px;
+           margin: 15px;
+   flex-basis:calc((100% - 4 * 30px) / 4) ;
+    }    
     }
     &__item:last-child{
         margin-right: 0px;
     }
-
+.team__img{
+  
+    @media screen and(max-width:767px){
+    
+    } 
+    @media screen and(min-width:768px){
+            
+    } 
+    @media screen and(min-width:1280px){
+    width: 270px;
+    }  
+    }
     .team__box{
         box-shadow: var(--card-shadow);
         border-radius: 4px;

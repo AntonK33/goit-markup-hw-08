@@ -1,6 +1,5 @@
 
 
-
 .visually-hidden{
   position: absolute;
     clip: rect(0 0 0 0);
@@ -9,34 +8,48 @@
     margin: -1px;
 }
 
-
-
 .advantage{
     display: flex;
-@media screen and(min-width:320px){
-
-flex-wrap: wrap;
-}
-  
-@media screen and(min-width:768px){
-flex-wrap: wrap;
-} 
-@media screen and(min-width:1280px){
-
-}
+    @media screen and(max-width:767px){
+    flex-direction: column;
+    }
+    
+    @media screen and(min-width:768px){
+    flex-direction: row;
+    flex-wrap:wrap ;
+    margin:-15px ; 
+    } 
+    @media screen and(min-width:1280px){
+    flex-direction: row;
+   
+    }
 
 
     &:first-child{
         margin-left: 0px;
         padding-left: 0px;
     }
+}
     .advantage__item{
-        margin-right: 30px;
+       
+     @media screen and(max-width:767px){
+    margin-right: 0px;
+
+    }
+    
+    @media screen and(min-width:768px){
+    margin: 15px;
+    flex-basis: calc((100% - 2 * 30px) / 2);
+    } 
+    @media screen and(min-width:1280px){
+     margin: 15px;
+    flex-basis: calc((100% - 4 * 30px) / 4);
+    
     }
     &__item:last-child{
         margin-right: 0px;
     }
-
+    }
     .advantage__icon-box{
         height: 120px;
         width: 270;
@@ -63,7 +76,20 @@ flex-wrap: wrap;
         letter-spacing: 0.03em;
         text-transform: uppercase;
         margin-bottom: 10px;
+    @media screen and(max-width:767px){
+   text-align: center;
 
+    }
+    
+    @media screen and(min-width:768px){
+    
+    } 
+    @media screen and(min-width:1280px){
+   text-align: start;
+    }
+    &__item:last-child{
+        margin-right: 0px;
+    }
 
     }
 
@@ -72,7 +98,18 @@ flex-wrap: wrap;
         font-size: 14px;
         line-height:1.7;
         letter-spacing: 0.03em;
-        width: 270px;
-    
+       
+     @media screen and(max-width:767px){
+   text-align: center;
+margin-bottom: 30px;
     }
-}
+    
+    @media screen and(min-width:768px){
+    
+    } 
+    @media screen and(min-width:1280px){
+   text-align: start;
+    width: 270px;
+    margin-bottom: 0px;
+    }
+    }
