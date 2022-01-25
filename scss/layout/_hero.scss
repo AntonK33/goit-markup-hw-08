@@ -2,34 +2,39 @@
    background: #2F303A;
     padding: 200px 0;
     text-align: center;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../image/Img.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../image/hero-mob.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size:cover ;    
     margin-right: auto;
     margin-left: auto;
-     @media screen and(max-width:767px){
+    @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../image/hero-mobx2.jpg');
+    }
 
-    padding: 118px 0;
-  
-     }
-@media screen and(min-width:768px){
-    padding: 118px 0;
-    
-   
-   
-    
-}
-@media screen and(min-width:1280px){
-    padding: 200px 0;      
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../image/tablet/hero-tabl.jpg');
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../image/tablet/hero-tablx2.jpg');
+    }
+  }
 
+  @media screen and (min-width: 1280px) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../image/desktop/hero-desktop.jpg');
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../image/desktop/hero-desktopx2.jpg');
+    }
+  }
 }
- @media (min-device-pixel-ratio: 2),
-   (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../image/@2Img.png);
-}
-
 
 .hero__title{  
 
