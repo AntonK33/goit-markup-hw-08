@@ -866,6 +866,7 @@ img {
 
 .modal {
   position: absolute;
+  position: fixed;
   height: 581px;
   left: 50%;
   top: 50%;
