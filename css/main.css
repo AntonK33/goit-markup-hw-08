@@ -267,7 +267,6 @@ img {
 
 .mobile-menu__button {
   position: absolute;
-  position: fixed;
   top: 10px;
   right: 15px;
   padding: 0px;
@@ -895,7 +894,7 @@ img {
 @media screen and (max-width: 767px) {
   .modal {
     max-width: 450px;
-    height: 550px;
+    height: 530px;
     min-width: 320px;
   }
 }
