@@ -1,58 +1,79 @@
 .card-list{
-  display: flex;
-  flex-wrap: wrap; 
+  
+  
   
         @media screen and (min-width: 480px){
-margin: 0px;
+    margin: 0px;
+
         }
         @media screen and (min-width:768px){
-margin: -15px;
+    margin: -15px;
+    display: flex;
+    flex-wrap: wrap; 
+            
         }
         @media screen and (min-width: 1280px){          
-       
-margin: -15px;
+       display: flex;
+    margin: -15px;
+    flex-wrap: wrap; 
         }
-
+        
     .card-item{
-   z-index: 40;
+   z-index: 1;
         background-color: #ffffff;      
         margin-bottom: 30px;
         @media screen and (min-width: 480px){
-width: 100%;
-margin-right: 0px;
+    width: 100%;
+    margin-right: 0px;
+    &:last-child{
+        margin-bottom: 0px;
+    }
         }
         @media screen and (min-width:768px){
-margin: 15px;
-flex-basis:calc((100% - 2 * 30px) / 2) ;
-        }
-        @media screen and (min-width: 1280px){          
-       
-flex-basis:calc((100% - 3 * 30px) / 3) ;
-        }
-    
-    &:nth-child(3n){
-        @media screen and (min-width: 1280px) {
-             margin-right: 0px;
-              
-            }
-               
+    margin: 15px;
+    flex-basis:calc((100% - 2 * 30px) / 2) ;
+     border: 1px solid #EEEEEE;
+   }
+    &:last-child{
+        margin-bottom: 0px;
     }
 
-    &:nth-last-child(-n+3){
-        @media screen and (min-width: 1280px){
-margin-bottom: 0px;
+
+        @media screen and (min-width: 1280px){          
+       
+    flex-basis:calc((100% - 3 * 30px) / 3) ;
         }
-        
+             
     }
+    
+ 
+        
+    
      
-}
+
     .card-item__link{
         text-decoration: none;
         display: block;
         transition-property: box-shadow;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            @media screen and (min-width: 480px){
+   
+    }
+        
+        @media screen and (min-width:768px){
+        height: 100%;
+   }
     
+
+
+        @media screen and (min-width: 1280px){          
+       
+   
+        }
+            
+    
+
     &:hover,
     &:focus{
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -66,6 +87,8 @@ margin-bottom: 0px;
         overflow: hidden;
         display: block;
         position: relative;
+        z-index: 1;
+       
 
     }
     .card-item__background-thumb{
@@ -73,18 +96,20 @@ margin-bottom: 0px;
         top: 0px;
         left: 0px;  
         width: 100%;
-        height: 100%;
+        height: 101%;
         transform: translatey(100%);
         transition-property:transform ;
         transition-duration: 250ms ;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         background-color: rgba(33, 150, 243, 0.9);
+        z-index: 2;
     }
     .card-item__background-box{ 
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
+        z-index: 2;
     }
     .card-item__text-thumb{
         text-align: center;
@@ -97,16 +122,23 @@ margin-bottom: 0px;
         transition-property: transform;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+         @media screen and (min-width:768px){
+            
+          }
     }
 
     .card-item__image-text{
         background: #FFFFFF;
-        border: 1px solid #EEEEEE;
+       
         border-top: 0px;
         padding-top: 20px;
         padding-right: 20px;
         padding-bottom: 20px;
         padding-left: 24px;
+         
+     
+       
+
     }
 
     .card-item__title{
@@ -114,8 +146,9 @@ margin-bottom: 0px;
         font-size: 18px;
         line-height: 2;
         letter-spacing: 0.06em;
+        color: var(--title-text-color);
         @media screen and (min-width:768px){
-            font-size: 16px; 
+            font-size: 18px; 
         }
         
     }

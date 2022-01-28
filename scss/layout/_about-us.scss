@@ -6,12 +6,16 @@
 
 .section__indent{
     padding-top: 0px;
+ 
  @media screen and(max-width:767px){
      display: none;
  }
 @media screen and(min-width:768px){
  display: none;
 }
+ @media screen and(min-width:1280px){
+     display: block;
+  }
 
     .section__title{
         font-weight: 700;
