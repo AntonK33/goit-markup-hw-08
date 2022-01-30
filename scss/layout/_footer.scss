@@ -332,15 +332,16 @@ margin-right: 0px;
                  @media screen and(max-width:767px){
                 margin-bottom: 20px;
                 width:100%;
+               
                 }
                 
                 @media screen and(min-width:768px){
-margin-bottom: 20px;
-            
+                margin-bottom: 20px;
+                width: 450px;
                 } 
                 @media screen and(min-width:1280px){
                 margin-right: 0px;
-                max-width: 100%;
+               width: 358px;
                 }
             &:focus{
                 border:1px solid var(--accent-color);

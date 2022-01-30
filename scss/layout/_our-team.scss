@@ -1,6 +1,6 @@
 .section__color{
     background: #F5F4FA;
-z-index: 1;
+
 }
 .section__title{ 
     font-weight: 700;
@@ -29,20 +29,22 @@ z-index: 1;
 }
 
 .team{
-    display: flex; 
-z-index: 1;
+   
+
   @media screen and(max-width:767px){
-flex-direction: column;
+
 
 }
   
 @media screen and(min-width:768px){
 flex-wrap: wrap;
 display: flex;
-    margin: -15px;
+    margin:-15px;
 } 
 @media screen and(min-width:1280px){
 flex-direction: row;
+display: flex;
+  margin:-15px;
 }
     .team__item{
        
